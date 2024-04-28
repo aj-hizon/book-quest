@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="upper-nav-bar">
+                <img class="website-logo" src="/assets/img/BookQuest.svg" alt="">
+                <div class="search-bar">
+                    <img src="/assets/img/search-line.svg" alt="search logo">
+                    <form action="">
+                        <input class="search-bar-input" type="text">
+                    </form>
+                </div>
+                <ul class="nav-bar-options">
+                    <li class="options"><img src="/assets/img/user-line.svg" alt="user"></li>
+                    <li class="options"><img src="/assets/img/shopping-cart-line.svg" alt="shopping cart"></li>
+                    <li class="options"><img src="/assets/img/settings-2-line.svg" alt="settings"></li>
+                </ul>
+            </div>
+            <div class="categories-container">
+                <ul class="categories-list">
+                    <li class="category">New Books</li>
+                    <li class="category">Best Sellers</li>
+                    <li class="category">Bukkake</li>
+                    <li class="category">Nonfiction</li>
+                    <li class="category">Romance</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="carousel-container">
+        <div class="carousel-view">
+            <button class="carousel__button carousel__button--left is-hidden">
+                <img class="" src="/assets/img/left-button.svg" alt="">
+            </button>
+            <ul class="images-container">
+                <li class="carousel-slide current-slide">
+                    <img src="/assets/img/book-1.jpg" class="carousel-images" alt="">
+                </li>
+                <li class="carousel-slide">
+                    <img src="/assets/img/book-2.jpg" class="carousel-images" alt="">
+                </li>
+                <li class="carousel-slide">
+                    <img src="/assets/img/book-3.jpg" class="carousel-images" alt="">
+                </li>
+                <li class="carousel-slide">
+                    <img src="/assets/img/book-4.jpg" class="carousel-images" alt="">
+                </li>
+            </ul>
+            <button class="carousel__button carousel__button--right ">
+                <img class="" src="/assets/img/right-button.svg" alt="">
+            </button>
+            <div class="carousel-nav">
+                <button class="carousel-indicator current-slide"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+                <button class="carousel-indicator"></button>
+            </div>
+        </div>
+</div>
+    <script type="text/javascript" src="/assets/js/script.js"></script>
+</body>
+</html>
