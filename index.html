@@ -1,72 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/mainPageStyle.css">
+    <link rel="stylesheet" href="assets/styles/footerStyle.css">
+    <title>BOOKQUEST Online bookshop</title>
 </head>
+
 <body>
     <header>
         <nav class="nav-bar">
             <div class="upper-nav-bar">
-                <img class="website-logo" src="/assets/img/BookQuest.svg" alt="">
-                <div class="search-bar">
-                    <img src="/assets/img/search-line.svg" alt="search logo">
-                    <form action="">
-                        <input class="search-bar-input" type="text">
-                    </form>
+                <div class="menu-title">
+                    <img id="menu-button" src="assets\img\menu-line.svg" alt="menu button">
+                    <h1 class="logo">BookQuest</h1>
                 </div>
-                <ul class="nav-bar-options">
-                    <li class="options"><img src="/assets/img/user-line.svg" alt="user"></li>
-                    <li class="options"><img src="/assets/img/shopping-cart-line.svg" alt="shopping cart"></li>
-                    <li class="options"><img src="/assets/img/settings-2-line.svg" alt="settings"></li>
-                </ul>
+                <div class="" style="display: flex; align-items: center; gap: 3rem; ">
+                    <div class="search-bar">
+                        <img src="/assets/img/search-line.svg" alt="search logo">
+                        <form action="">
+                            <input class="search-bar-input" type="text">
+                        </form>
+                    </div>
+                    <ul class="nav-bar-options">
+                        <a href="">
+                            <li class="options" id="wishlist">
+                                <p>Wishlist</p>
+                                <img src="assets\img\heart-line.svg" alt="wishlist">
+                            </li>
+                        </a>
+                        <a href="/shopping-bag.html">
+                            <li class="options" id="shopping-bag">
+                                <p>Shopping bag</p>
+                                <img src="/assets/img/shopping-bag-line.svg" alt="shopping cart">
+                            </li>
+                        </a>
+                        <a href="/login-register.html">
+                            <li class="options" id="login-register">
+                                <p>Login/Register</p>
+                                <img src="/assets/img/user-line.svg" alt="user">
+                            </li>
+                        </a>
+                    </ul>
+                </div>
             </div>
             <div class="categories-container">
                 <ul class="categories-list">
-                    <li class="category">New Books</li>
-                    <li class="category">Best Sellers</li>
-                    <li class="category">Bukkake</li>
-                    <li class="category">Nonfiction</li>
-                    <li class="category">Romance</li>
+                    <li>
+                        <ul id="categories-dropdown">
+                            <div id="categories-button">
+                                <li id="genre" class="category">Categories</li>
+                                <img id="category-arrow" src="assets\img\arrow-up-s-fill.svg" alt="">
+                            </div>
+                            <ul id="categories-options">
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/fantasyBooks.html">Fantasy</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/sci-fiBooks.html">Sci-fi</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/mysteryBooks.html">Mystery</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/horrorBooks.html">Horror</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/romance.html">Romance</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/lgbtqBooks.html">LGBTQ+</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="category">New!!</li>
+                    <li class="category">Trending</li>
+                    <li class="category">Sale!!</li>
+                    <li class="category">Store Locator</li>
                 </ul>
             </div>
         </nav>
     </header>
-    <div class="carousel-container">
-        <div class="carousel-view">
-            <button class="carousel__button carousel__button--left is-hidden">
-                <img class="" src="/assets/img/left-button.svg" alt="">
-            </button>
-            <ul class="images-container">
-                <li class="carousel-slide current-slide">
-                    <img src="/assets/img/book-1.jpg" class="carousel-images" alt="">
-                </li>
-                <li class="carousel-slide">
-                    <img src="/assets/img/book-2.jpg" class="carousel-images" alt="">
-                </li>
-                <li class="carousel-slide">
-                    <img src="/assets/img/book-3.jpg" class="carousel-images" alt="">
-                </li>
-                <li class="carousel-slide">
-                    <img src="/assets/img/book-4.jpg" class="carousel-images" alt="">
-                </li>
-            </ul>
-            <button class="carousel__button carousel__button--right ">
-                <img class="" src="/assets/img/right-button.svg" alt="">
-            </button>
-            <div class="carousel-nav">
-                <button class="carousel-indicator current-slide"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
-                <button class="carousel-indicator"></button>
+    <div id="section-1">
+        <div class="carousel-container">
+            <div class="carousel-view">
+                <button class="carousel__button carousel__button--left is-hidden">
+                    <img class="" src="assets\img\arrow-left-wide-line.svg" alt="">
+                </button>
+                <ul class="images-container">
+                    <li class="carousel-slide current-slide"
+                        style="display: flex; justify-content: center; align-items: center;">
+                        <img src="assets\img\flashsale.png" class="carousel-images" alt="">
+                    </li>
+                    <li class="carousel-slide current-slide"
+                        style="display: flex; justify-content: center; align-items: center;">
+                        <img src="assets\img\bookquestwelcome.png" class="carousel-images" alt="">
+                    </li>
+                    <li class="carousel-slide current-slide"
+                        style="display: flex; justify-content: center; align-items: center;">
+                        <img src="assets\img\backtoschooldrop.png" class="carousel-images" alt="">
+                    </li>
+                    
+                </ul>
+                <button class="carousel__button carousel__button--right ">
+                    <img src="assets\img\arrow-right-wide-line.svg" alt="">
+                </button>
+                <div class="carousel-nav">
+                    <button class="carousel-indicator current-slide"></button>
+                    <button class="carousel-indicator"></button>
+                    <button class="carousel-indicator"></button>
+                </div>
             </div>
         </div>
-</div>
-    <script type="text/javascript" src="/assets/js/script.js"></script>
+    </div>
+    <div class="trending-container">
+        <h1>Trending</h1>
+        <div class="trending-carousel-view">
+            <button id="trending-prev-btn" class="trending-btn">
+                <img src="assets\img\arrow-left-wide-line.svg" alt="left arrow">
+            </button>
+            <ul id="trending-item-list">
+                <li class="trending-item">
+                    <a href="/book templates/fantasy/Alice.html">
+                        <img src="book templates\fantasy\img\alice.jpg" alt="alice in wonderland">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="/book templates/fantasy/chambersofsecret.html">
+                        <img src="book templates\fantasy\img\harrypotterchambersofsecret.jpg" alt="chamber of secret">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\fantasy\img\jadecity.jpg" alt="jade city">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\fantasy\img\matilda.jpg" alt="matilda">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\fantasy\img\nameofthewind.png"
+                            alt="name of the wind">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\fantasy\img\thehobbit.jpg" alt="the hobbit">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\fantasy\img\thenightcircus.jpg"
+                            alt="the night circus">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Romance\img\It ends with us.jpg"
+                            alt="it ends with us">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Romance\img\my-mechanical-romance.jpg"
+                            alt="my mechanical romance">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Romance\img\Write me a love story.jpg"
+                            alt="write me a love story">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Sci-Fi\img\20th-century-boys.jpg"
+                            alt="20th century boys">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Sci-Fi\img\assasination-classroom.jpg"
+                            alt="assasinationclassroom">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Sci-Fi\img\dandadan.jpg" alt="dandadan">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Sci-Fi\img\dr-stone.jpg" alt="dr stone">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Sci-Fi\img\eighty-six.jpg" alt="eighty six">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Sci-Fi\img\fire-force.jpg" alt="fire force">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Sci-Fi\img\opm-manga.png"
+                            alt="one punch man">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Sci-Fi\img\shangri-la-frontier.jpg" alt="sn">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Romance\img\my-mechanical-romance.jpg"
+                            alt="my mechanical romance">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Romance\img\Write me a love story.jpg"
+                            alt="write me a love story">
+                    </a>
+                </li>
+            </ul>
+            <button id="trending-next-btn" class="trending-btn">
+                <img src="assets\img\arrow-right-wide-line.svg" alt="right arrow">
+            </button>
+        </div>
+    </div>
+    <section class="discounts-section">
+        <ul class="discount-container">
+            <li>
+                <img src="assets\img\studentDiscount.png" alt="student discount">
+            </li>
+            <li>
+                <img src="assets\img\summerReadsSale.png" alt="summer reads sale">
+            </li>
+            <li>
+                <img src="assets\img\maySale.png" alt="may sale">
+            </li>
+        </ul>
+    </section>
+    <div class="trending-container">
+        <h1>Best sellers!!</h1>
+        <div class="trending-carousel-view">
+            <button id="bestSellers-prev-btn" class="trending-btn">
+                <img src="assets\img\arrow-left-wide-line.svg" alt="left arrow">
+            </button>
+            <ul id="bestSellers-item-list">
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\davinci.jpeg" alt="davinci">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\gonegirl.jpeg" alt="gone girl">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\monster.jpeg" alt="monster">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Horror\img\fragments-of-horror.jpg"
+                            alt="fragments of horror">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\thebig.jpeg" alt="the big">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\thecuckoos.jpeg"
+                            alt="the cuckoos">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\thegirl.jpeg" alt="the girl">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\thehound.jpeg" alt="the hound">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\themurder.jpeg" alt="the murder">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\theno1.jpeg" alt="theno 1">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Mystery\img\thewoods.jpeg" alt="the woods">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Romance\img\It starts with us.jpg"
+                            alt="it starts with us">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img"
+                            src="book templates\Romance\img\Pride And Prejudice And Pittsburgh.jpg"
+                            alt="Pride And Prejudice And Pittsburgh">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Romance\img\The rain in espana.jpg"
+                            alt="The rain in espana">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\Romance\img\Safe skies archer.jpg"
+                            alt="Safe skies archer">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img"
+                            src="book templates\Romance\img\It Started With a Friend Request.jpg"
+                            alt="It Started With a Friend Request">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\lgbt\img\achilles.jpg" alt="achilles">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\lgbt\img\heartstopper.jpg"
+                            alt="heart stopper">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\lgbt\img\houseinceruleansea.jpg"
+                            alt="house in cerulean sea">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="book templates\lgbt\img\sevenhusbands.jpg"
+                            alt="seven husbands">
+                    </a>
+                </li>
+            </ul>
+            <button id="bestSellers-next-btn" class="trending-btn">
+                <img src="assets\img\arrow-right-wide-line.svg" alt="right arrow">
+            </button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About BookQuest</h4>
+                    <ul>
+                        <li><a href="#"> About Us </a> </li>
+                        <li><a href="#"> Blog </a> </li>
+                        <li><a href="#"> Mission and Vision </a> </li>
+                        <li><a href="#"> Brand Lists </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Customer Service </h4>
+                    <ul>
+                        <li><a href="#"> FAQS </a> </li>
+                        <li><a href="#"> Help Center </a> </li>
+                        <li><a href="#"> Exchange and Return </a> </li>
+                        <li><a href="#"> How to Buy </a> </li>
+                        <li><a href="#"> Payment Methods </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Terms and Conditions </h4>
+                    <ul>
+                        <li><a href="#"> Terms of Use </a> </li>
+                        <li><a href="#"> Privacy Policy </a> </li>
+                        <li><a href="#"> Cookies and Cache </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/assets/js/navigationBar.js"></script>
+    <script type="text/javascript" src="/assets/js/carousel.js"></script>
+    <script type="text/javascript" src="/assets/js/trendingCarousel.js"></script>
+    <script type="text/javascript" src="/assets/js/bestSellersCarousel.js"></script>
 </body>
+
 </html>

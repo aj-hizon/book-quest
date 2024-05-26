@@ -1,0 +1,139 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.source-description {
+    color: #180763;
+    margin: 2rem 0;
+    font-size: 15px;
+}
+
+.source-description a:hover {
+    text-decoration: underline;
+}
+
+.img-source {
+    color: #180763;
+}
+
+.img-source:hover {
+    text-decoration: underline
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.book-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    cursor: default;
+    margin: 18rem 20rem;
+}
+
+.book-information {
+    max-width: 80vw;
+}
+
+.book-image {
+    width: 23rem;
+}
+
+.author-name {
+    font-size: 1.1rem;
+    color: #180763;
+    font-weight: 200;
+    margin: 0 0 0 0;
+    cursor: pointer;
+}
+
+.author-name:hover {
+    text-decoration-line: underline;
+}
+
+.book-title {
+    font-weight: 500; 
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    color: #180763;
+    margin: 0 0 0 0;
+    text-wrap: wrap;
+}
+
+.stars {
+    margin: 0 0 0 0;
+}
+
+.book-price {
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0.8rem 0;
+}
+
+.book-description {
+    font-weight: 200;
+    color: #180763;
+    font-size: 18px;
+    max-width: 35rem; 
+    margin: 0 0 1rem 0; 
+}
+
+.qty-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.qty-count {
+    display: flex;
+    background-color: white;
+}
+
+.normal-buttons {
+    border: 0;
+    background-color: #D9D9D9;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+    border-radius: 50px;
+    padding: 4px 20px;
+}
+
+.normal-buttons:hover {
+    background-color: #8D8D8D;
+    cursor: pointer
+}
+
+.normal-buttons img{
+    background: none;
+    margin: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+.plus-sign {
+    border-radius: 0 50px 50px 0;
+    padding: 0.4rem 1rem;
+}
+
+.minus-sign {
+    border-radius: 50px 0 0 50px;
+    padding: 0.4rem 1rem;
+}
+
+
+.qty-count input {
+    text-align: center;
+    background-color: #D9D9D9;
+    font-size: 1.2rem;
+    max-width: 5rem;
+}
+
+.qty-count input {
+    border: 0;
+}
+

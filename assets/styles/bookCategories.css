@@ -1,0 +1,120 @@
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 0 3rem 0;
+}
+
+.category-container {
+    margin-top: 11rem;
+    width: 70vw;
+} 
+
+.category-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.category-select {
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+}
+
+.category-select option{
+    font-family: "Poppins", sans-serif;
+    padding: 30rem 0;
+    font-size: 15px;
+}
+
+.books-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.category-books {
+    background-color: #FEF6C180;
+    padding: 1.5rem;
+    border-radius: 20px;
+}
+
+.category-books-img {
+    width: 10rem;
+    height: 15rem;
+    margin: 0 auto 2rem auto;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.category-books a {
+    display: flex;
+    flex-direction: column;
+    width: 14rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #180763;
+}
+
+.author {
+    font-size: 13px;
+    color: #180763;
+
+}
+
+.book-title {
+    color: #180763;
+    font-size: 15px; 
+}
+
+.star-rating {
+    margin-bottom: 3rem;
+}
+
+// PAGINATION 
+
+
+.pagination-btn img {
+    width: 3rem;
+    height: 3rem;
+}
+
+.pagination-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.8rem;
+    flex-wrap: wrap; 
+}
+
+.pagination-btn {
+    display: flex;
+    align-items: center;
+    color: #180763; 
+    width: 4rem;
+}
+
+.pagination-numbers {
+    color: #180763;
+    text-align: center;
+}
+
+
+
+

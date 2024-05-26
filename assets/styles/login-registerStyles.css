@@ -1,0 +1,143 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #180763;
+  margin: 0;
+  background-color: white;
+}
+a {
+  color: #180763;
+}
+
+button {
+    cursor: pointer;
+}
+
+#login-welcome {
+  text-transform: uppercase;
+  color: #180763;
+  text-align: center;
+  font-size: 40px;
+  margin: 0 0 2rem 0;
+  font-weight: 700;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  padding: 4rem;
+  border: solid;
+  border: none;
+  border-color: #80808040;
+  border-width: 2px;
+  border-radius: 20px;
+  gap: 1.3rem;
+  background-color: #40;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+}
+
+label {
+  font-size: 14px;
+}
+
+#girl-reading-bg  {
+    object-fit: cover;
+    width: 40vw;
+}
+
+#input-password {
+  letter-spacing: 0.5rem;
+}
+
+#login-section {
+    margin-top: 11rem;
+    display: flex;
+    justify-content: flex-end;
+    background-image: url("/assets/img/BOOKQUEST (1).png");
+    background-size: cover;
+    background-position: center;
+    height: 81.4vh;
+    padding: 2rem 0;
+}
+
+.input-container input {
+  padding: 0 1rem;
+}
+
+.input-box {
+  height: 3rem;
+  border-radius: 10px;
+  background: none;
+  border: solid;
+  border-width: 1px;
+  border-color: #80808030;
+  background-color: white;
+  font-size: 15px;
+}
+
+.input-box:focus {
+  background: white;
+  border: 1px solid grey;
+}
+
+.login-container {
+    width: 30vw;
+    margin-right: 12rem;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.below-input-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.google-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-size: 15px;
+}
+
+#google-logo {
+  width: 2rem;
+}
+
+.or-break-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.line {
+  width: 6rem;
+  background-color: #80808050;
+  height: 0.2px;
+}
+
+.create-acc-btn {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+}
+
+#remember-me-checkbox {
+  width: 15px;
+  height: 15px;
+}
+
+#remember-me-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+#forgot-password {
+    color: #180763;
+    font-size: 15px;
+}

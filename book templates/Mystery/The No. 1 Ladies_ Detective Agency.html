@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/eachBookStyles.css">
+    <title></title>
+    <style>
+        input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.book-section {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    cursor: default;
+}
+
+.book-information {
+}
+
+.book-image {
+    max-width: 20rem;
+    object-fit: ;
+}
+
+.author-name {
+    font-size: 1.1rem;
+    color: #8E8E8E;
+    font-weight: 200;
+    margin: 0 0 0 0;
+    cursor: pointer;
+}
+
+.author-name:hover {
+    text-decoration-line: underline;
+}
+
+.book-title {
+    font-weight: 200; 
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    color: #8E8E8E;
+    margin: 0 0 0 0;
+}
+
+.stars {
+    margin: 0 0 0 0;
+}
+
+.book-price {
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0.8rem 0;
+}
+
+.book-description {
+    font-weight: 200;
+    color: #545454;
+    font-size: 18px;
+    max-width: 35rem; 
+    margin: 0 0 1rem 0; 
+}
+
+.qty-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.qty-count {
+    display: flex;
+    background-color: white;
+}
+
+.normal-buttons {
+    border: 0;
+    background-color: #D9D9D9;
+    font-size: 1rem;
+    font-weight: 200;
+    font-family: "Poppins", sans-serif;
+    border-radius: 50px;
+    padding: 4px 20px;
+}
+
+.normal-buttons:hover {
+    background-color: #8D8D8D;
+    cursor: pointer
+}
+
+.normal-buttons img{
+    background: none;
+    margin: 0;
+    width: 0.7rem;
+    height: 0.7rem;
+}
+
+.plus-sign {
+    border-radius: 0 50px 50px 0;
+    padding: 0.4rem 1rem;
+}
+
+.minus-sign {
+    border-radius: 50px 0 0 50px;
+    padding: 0.4rem 1rem;
+}
+
+
+.qty-count input {
+    text-align: center;
+    background-color: #D9D9D9;
+    font-size: 1.2rem;
+    max-width: 5rem;
+}
+
+.qty-count input {
+    border: 0;
+}
+
+.category {
+    margin: 0;
+    color: #8E8E8E;
+    font-weight: 200;
+    margin-top: 2rem;
+}
+
+a {
+    color: #545454;
+    font-size: 15px;
+    text-wrap: wrap;
+    font-weight: 200;
+}
+
+p { 
+    color: #545454;
+    font-size: 15px;
+    font-weight: 200;
+}
+    </style>
+</head>
+<body>
+    <section class="book-section">
+        <div class="book-img">
+            <img class="book-image" src="img/theno1.jpeg" alt="book picture">
+            <p>
+                Image source:
+                <a href="https://www.kobo.com/ph/en/ebook/the-no-1-ladies-detective-agency-1">click here</a>
+            </p>
+        </div>
+        <div class="book-information">
+            <div class="">
+                <p class="author-name">Alexander McCall Smith</p>
+                <h1 class="book-title">THE NO. 1 LADIES' DETECTIVE AGENCY</h1>
+                <img src="img/stars.svg" alt="stars rating">
+                <p class="book-price">₱ 1200.00</p>
+                <p class="book-description">In the heart of Botswana, Precious Ramotswe fulfills her lifelong dream of opening the first female-owned detective agency in the country. Armed with keen intuition and a deep love for her homeland, Precious tackles cases big and small with compassion and wisdom. McCall Smith's gentle humor and affectionate portrayal of Botswana bring the vibrant setting to life, while Precious's unyielding optimism and moral integrity make her a beloved protagonist. "The No. 1 Ladies' Detective Agency" is a delightful and heartwarming series that celebrates the power of kindness and the beauty of human connection. Its charming characters and engaging mysteries have won the hearts of readers around the world.
+                </p>
+            </div>
+            <form class="qty-form">
+                <div class="qty-count">
+                    <button class="normal-buttons minus-sign">
+                        <img src="img/minus-sign.svg" alt="plus sign">
+                    </button>
+                    <input class="" type="number"> 
+                    <button class="normal-buttons plus-sign  plus-sign">
+                        <img src="img/plus-sign.svg" alt="plus sign">
+                    </button>
+                </div>
+                <div class="">
+                    <button class="normal-buttons">Buy now</button>
+                    <button class="normal-buttons">Add to Cart</button>
+                </div>
+            </form>
+            <p class="category">Category: Mystery, Cozy Mystery</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/styles/mainPageStyle.css">
+    <link rel="stylesheet" href="/assets/styles/bookCategories.css">
+    <link rel="stylesheet" href="/assets/styles/footerStyle.css">
+    <link rel="stylesheet" href="/assets/styles/shoppingBagStyles.css">
+    <title>Shopping bag | Bookquest</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="upper-nav-bar">
+                <div class="menu-title">
+                    <img id="menu-button" src="/assets/img/menu-line.svg" alt="menu button">
+                    <a href="/index.html">
+                        <h1 class="logo">BookQuest</h1>
+                    </a>
+                </div>
+                <div class="" style="display: flex; align-items: center; gap: 3rem; ">
+                    <div class="search-bar">
+                        <img src="/assets/img/search-line.svg" alt="search logo">
+                        <form action="">
+                            <input class="search-bar-input" type="text">
+                        </form>
+                    </div>
+                    <ul class="nav-bar-options">
+                        <a href="">
+                            <li class="options" id="wishlist">
+                                <p>Wishlist</p>
+                                <img src="/assets/img/heart-line.svg" alt="wishlist">
+                            </li>
+                        </a>
+                        <a href="/shopping-bag.html">
+                            <li class="options" id="shopping-bag">
+                                <p>Shopping bag</p>
+                                <img src="/assets/img/shopping-bag-line.svg" alt="shopping cart">
+                            </li>
+                        </a>
+                        <a href="/login-register.html">
+                            <li class="options" id="login-register">
+                                <p>Login/Register</p>
+                                <img src="/assets/img/user-line.svg" alt="user">
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <div class="categories-container">
+                <ul class="categories-list">
+                    <li>
+                        <ul id="categories-dropdown">
+                            <div id="categories-button">
+                                <li id="genre" class="category">Categories</li>
+                                <img id="category-arrow" src="/assets/img/arrow-up-s-fill.svg" alt="">
+                            </div>
+                            <ul id="categories-options">
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/fantasyBooks.html">Fantasy</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/sci-fiBooks.html">Sci-fi</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/mysteryBooks.html">Mystery</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/horrorBooks.html">Horror</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/romance.html">Romance</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/lgbtqBooks.html">LGBTQ+</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="category">New!!</li>
+                    <li class="category">Trending</li>
+                    <li class="category">Sale!!</li>
+                    <li class="category">Store Locator</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="shopping-bag-section">
+        <div id="shopping-bag-container">
+            <div class="shopping-bag-header">
+                <h1 id="shopping-bag-title">Shopping Bag</h1>
+                <p class="price-title">Price</p>
+            </div>
+            <ul class="">
+                <li class="shopping-bag-books-container">
+                    <div class="shopping-bag-books">
+                        <img class="shopping-bag-books-img" src="/book templates/Horror/img/Doctor Sleep.jpg" alt="">
+                        <div class="">
+                            <h2 class="">Doctor Sleep</h2>
+                            <p class="author">By Stephen King</p>
+                            <p class="">⭐⭐⭐⭐⭐</p>
+                            <p class="book-description">
+                                On highways across America, a tribe of people called The True Knot travel in search
+                                of sustenance. They look harmless - mostly old, lots of polyester, and married to
+                                their RVs. But as Dan Torrance knows, and spunky 12-year-old Abra Stone learns, The
+                                True Knot are quasi-immortal, living off the "steam" that children with the
+                                "shining" produce when they are slowly tortured to death.
+                            </p>
+                            <div class="add-subtract-item">
+                                <div class="qty-form">
+                                    <button class="">
+                                        <img class="operator-sign" src="/assets/img/subtract-line.svg" alt="minus sign">
+                                    </button>
+                                    <input class="" type="number" value="1">
+                                    <button class="">
+                                        <img class="operator-sign" src="/assets/img/add-line.svg" alt="add sign">
+                                    </button>
+                                </div>
+                                <p class="add-subtract-items-control">Delete</p>
+                                <p class="add-subtract-items-control">Save for later</p>
+                                <p class="add-subtract-items-control">Compare with similar items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="price">₱ 1,499.00</p>
+                </li>
+                <li class="shopping-bag-books-container">
+                    <div class="shopping-bag-books">
+                        <img class="shopping-bag-books-img" src="/book templates/Horror/img/The Amityville Horror.jpg"
+                            alt="">
+                        <div class="">
+                            <h2 class="">The Amityville horror</h2>
+                            <p class="author">By Jay Anson</p>
+                            <p class="">⭐⭐⭐⭐⭐</p>
+                            <p class="book-description">
+                                In December 1975, the Lutz family moved into their dream home, the same home where
+                                Ronald DeFeo had murdered his parents, brothers and sisters just one year earlier.
+                            </p>
+                            <div class="add-subtract-item">
+                                <div class="qty-form">
+                                    <button class="">
+                                        <img class="operator-sign" src="/assets/img/subtract-line.svg" alt="minus sign">
+                                    </button>
+                                    <input class="" type="number" value="1">
+                                    <button class="">
+                                        <img class="operator-sign" src="/assets/img/add-line.svg" alt="add sign">
+                                    </button>
+                                </div>
+                                <p class="add-subtract-items-control">Delete</p>
+                                <p class="add-subtract-items-control">Save for later</p>
+                                <p class="add-subtract-items-control">Compare with similar items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="price">₱ 1,289.00</p>
+                </li>
+                <li class="shopping-bag-books-container">
+                    <div class="shopping-bag-books">
+                        <img class="shopping-bag-books-img" src="/book templates/Horror/img/fragments-of-horror.jpg"
+                            alt="">
+                        <div class="">
+                            <h2 class="">Fragments of Horror</h2>
+                            <p class="author">By Junji Ito</p>
+                            <p class="">⭐⭐⭐⭐⭐</p>
+                            <p class="book-description">
+                                A new collection of delightfully macabre tales from a master of horror manga. An old
+                                wooden mansion that turns on its inhabitants. A dissection class with a most unusual
+                                subject. A funeral where the dead are definitely not laid to rest. Ranging from the
+                                terrifying to the comedic, from the erotic to the loathsome, these stories showcase
+                                Junji Ito's long-awaited return to the world of horror.
+                            </p>
+                            <div class="add-subtract-item">
+                                <div class="qty-form">
+                                    <button class="">
+                                        <img class="operator-sign" src="/assets/img/subtract-line.svg" alt="minus sign">
+                                    </button>
+                                    <input class="" type="number" value="1">
+                                    <button class="">
+                                        <img class="operator-sign" src="/assets/img/add-line.svg" alt="add sign">
+                                    </button>
+                                </div>
+                                <p class="add-subtract-items-control">Delete</p>
+                                <p class="add-subtract-items-control">Save for later</p>
+                                <p class="add-subtract-items-control">Compare with similar items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="price">₱ 1,499.00</p>
+                </li>
+                <li class="shopping-bag-books-container">
+                    <div class="shopping-bag-books">
+                        <img class="shopping-bag-books-img" src="/book templates/Horror/img/Harvest Home.jpg" alt="">
+                        <div class="">
+                            <h2 class="">Harvest Home</h2>
+                            <p class="author">By Thomas Tryon</p>
+                            <p class="">⭐⭐⭐⭐⭐</p>
+                            <p class="book-description">
+                                It was almost as if time had not touched the village of Cornwall Coombe. The quiet,
+                                peaceful place was straight out of a bygone era, with well-cared-for Colonial houses, a
+                                white-steepled church fronting a broad Common. Ned and Beth Constantine chanced upon the
+                                hamlet and immediately fell in love with it. This was exactly the haven they dream of.
+                                Or so they thought.
+                            </p>
+                            <div class="add-subtract-item">
+                                <div class="qty-form">
+                                    <button class="">
+                                        <img class="operator-sign" src="/assets/img/subtract-line.svg" alt="minus sign">
+                                    </button>
+                                    <input class="" type="number" value="1">
+                                    <button class="">
+                                        <img class="operator-sign" src="/assets/img/add-line.svg" alt="add sign">
+                                    </button>
+                                </div>
+                                <p class="add-subtract-items-control">Delete</p>
+                                <p class="add-subtract-items-control">Save for later</p>
+                                <p class="add-subtract-items-control">Compare with similar items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="price">₱ 1,500.00</p>
+                </li>
+            </ul>
+            <p class="price-title">Total: 5,787</p>
+        </div>
+        <div class="side-bar">
+            <div id="related-items">
+                <h1 id="related-items-title" class="shopping-bag-section-titles">related Items</h1>
+                <ul class="books-container">
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/Alice.html">
+                            <img class="category-books-img" src="../book templates/fantasy/img/alice.jpg" alt="">
+                            <h2 class="book-title">Alice's Adventures in Wonderland</h2>
+                            <p class="author">by Lewis Caroll</p>
+                            <p class="star-rating">⭐⭐⭐⭐⭐</p>
+                            <p class="price">₱ 1,500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/circe.html">
+                            <img class="category-books-img" src="../book templates/fantasy/img/circe.jpg" alt="">
+                            <h2 class="book-title">Circe</h2>
+                            <p class="author">by Madeline Miller</p>
+                            <p class="star-rating">⭐⭐⭐</p>
+                            <p class="price">₱ 300.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/chambersofsecret.html">
+                            <img class="category-books-img"
+                                src="../book templates/fantasy/img/harrypotterchambersofsecret.jpg" alt="">
+                            <h2 class="book-title">Harry Potter and the Chamber of Secret</h2>
+                            <p class="author">by J.K Rowling</p>
+                            <p class="star-rating">⭐⭐⭐⭐</p>
+                            <p class="price">₱ 2,000.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/sorcererstone.html">
+                            <img class="category-books-img"
+                                src="../book templates/fantasy/img/harrypottersorcererstone.jpg" alt="">
+                            <h2 class="book-title">Harry Potter and the Sorcerer's Stone</h2>
+                            <p class="author">by J.K Rowling</p>
+                            <p class="star-rating">⭐⭐⭐⭐⭐</p>
+                            <p class="price">₱ 2,500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/jadecity.html">
+                            <img class="category-books-img" src="../book templates/fantasy/img/jadecity.jpg" alt="">
+                            <h2 class="book-title">Jade City</h2>
+                            <p class="author">by Fonda Lee</p>
+                            <p class="star-rating">⭐⭐</p>
+                            <p class="price">₱ 800.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/matilda.html">
+                            <img class="category-books-img" src="../book templates/fantasy/img/matilda.jpg" alt="">
+                            <h2 class="book-title">Matilda</h2>
+                            <p class="author">by Lewis Caroll</p>
+                            <p class="star-rating">⭐⭐⭐</p>
+                            <p class="price">₱ 1,500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/nameofthewind.html">
+                            <img class="category-books-img" src="../book templates/fantasy/img/nameofthewind.png"
+                                alt="">
+                            <h2 class="book-title">Name of The Wind</h2>
+                            <p class="author">by Lewis Caroll</p>
+                            <p class="star-rating">⭐</p>
+                            <p class="price">₱ 1,500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/TheHobbit.html">
+                            <img class="category-books-img" src="../book templates/fantasy/img/thehobbit.jpg" alt="">
+                            <h2 class="book-title">The Hobbit</h2>
+                            <p class="author">by Lewis Caroll</p>
+                            <p class="star-rating">⭐⭐</p>
+                            <p class="price">₱ 1,500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/nightofcircus.html">
+                            <img class="category-books-img" src="../book templates/fantasy/img/thenightcircus.jpg"
+                                alt="">
+                            <h2 class="book-title">The Night of Circus</h2>
+                            <p class="author">by Lewis Caroll</p>
+                            <p class="star-rating">⭐⭐⭐</p>
+                            <p class="price">₱ 1,500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                    <li class="category-books">
+                        <a href="/book templates/fantasy/wizardofearthsea.html">
+                            <img class="category-books-img" src="../book templates/fantasy/img/wizardofearthsea.jpg"
+                                alt="">
+                            <h2 class="book-title">Wizard Of Earth Sea</h2>
+                            <p class="author">by Lewis Caroll</p>
+                            <p class="star-rating">⭐⭐⭐</p>
+                            <p class="price">₱ 1,500.00</p>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About BookQuest</h4>
+                    <ul>
+                        <li><a href="#"> About Us </a> </li>
+                        <li><a href="#"> Blog </a> </li>
+                        <li><a href="#"> Mission and Vision </a> </li>
+                        <li><a href="#"> Brand Lists </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Customer Service </h4>
+                    <ul>
+                        <li><a href="#"> FAQS </a> </li>
+                        <li><a href="#"> Help Center </a> </li>
+                        <li><a href="#"> Exchange and Return </a> </li>
+                        <li><a href="#"> How to Buy </a> </li>
+                        <li><a href="#"> Payment Methods </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Terms and Conditions </h4>
+                    <ul>
+                        <li><a href="#"> Terms of Use </a> </li>
+                        <li><a href="#"> Privacy Policy </a> </li>
+                        <li><a href="#"> Cookies and Cache </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/assets/js/navigationBar.js"></script>
+</body>
+
+</html>

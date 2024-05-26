@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles/eachBookStyles.css">
+    <link rel="stylesheet" href="/assets/styles/mainPageStyle.css">
+    <link rel="stylesheet" href="/assets/styles/footerStyle.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="upper-nav-bar">
+                <div class="menu-title">
+                    <img id="menu-button" src="/assets/img/menu-line.svg" alt="menu button">
+                    <h1 class="logo">
+                        <a href="/index.html">bookquest</a>
+                    </h1>
+                </div>
+                <div style="display: flex; align-items: center; gap: 3rem; ">
+                    <div class="search-bar">
+                        <img style="width: 2.5rem" src="/assets/img/search-line.svg" alt="search logo">
+                        <form action="">
+                            <input class="search-bar-input" type="text">
+                        </form>
+                    </div>
+                    <ul class="nav-bar-options">
+                        <li class="options">
+                            <p>Wishlist</p>
+                            <img src="/assets/img/heart-line.svg" alt="wishlist">
+                        </li>
+                        <li class="options">
+                            <p>Shopping bag</p>
+                            <img src="/assets/img/shopping-bag-line.svg" alt="shopping cart">
+                        </li>
+                        <li class="options">
+                            <p>Login/Register</p>
+                            <img src="/assets/img/user-line.svg" alt="user">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="categories-container">
+                <ul class="categories-list">
+                    <li>
+                        <ul id="categories-dropdown">
+                            <div id="categories-button">
+                                <li id="category-genre" class="category">Categories</li>
+                                <img id="category-arrow" src="/assets/img/arrow-up-s-fill.svg" alt="">
+                            </div>
+                            <ul id="categories-options">
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/fantasyBooks.html">Fantasy</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/sci-fiBooks.html">Sci-fi</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/mysteryBooks.html">Mystery</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/horrorBooks.html">Horror</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/romance.html">Romance</a>
+                                </li>
+                                <li class="categories-options-items">
+                                    <a href="/book category html pages/lgbtqBooks.html">LGBTQ+</a>
+                                </li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="category">New!!</li>
+                    <li class="category">Trending</li>
+                    <li class="category">Sale!!</li>
+                    <li class="category">Store Locator</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="book-section">
+        <div class="book-img">
+            <img class="book-image" src="/book templates/Sci-Fi/img/shangri-la-frontier.jpg" alt="Jade City">
+            <p>
+                Image Source:
+                <a class="img-source" href="https://www.goodreads.com/book/show/26863057-age-of-myth">click here</a>
+            </p>
+        </div>
+
+        <div class="book-information">
+            <div class="">
+                <h1 class="book-title">SHANGRI-LA FRONTIER, VOL. 1</h1>
+                <p class="author-name">By Katarina and R. Fuji</p>
+                <p>⭐⭐⭐⭐⭐</p>
+                <p class="book-price">₱ 800.00</p>
+                <p class="book-description">Second year high school student Rakuro Hizutome is interested in one thing
+                    only: finding "shitty games" and beating the crap out of them. His gaming skills are second to none,
+                    and no game is too bad for him to enjoy. So when he's introduced to the new VR game Shangri-La
+                    Frontier, he does what he does best—min-maxes and skips the prologue to jump straight into the
+                    action. But can even an expert gamer like Rakuro discover all the secrets that Shangri-La Frontier
+                    hides...?
+                </p>
+                <p class="source-description">Source Description:
+                    <a style="color: #180763;" href="">click here </a>
+                </p>
+            </div>
+            <form class="qty-form">
+                <div class="qty-count">
+                    <button class="normal-buttons minus-sign">
+                        <img src="img/minus-sign.svg" alt="plus sign">
+                    </button>
+                    <input class="" type="number" value="1">
+                    <button class="normal-buttons plus-sign  plus-sign">
+                        <img src="img/plus-sign.svg" alt="plus sign">
+                    </button>
+                </div>
+
+                <div class="">
+                    <button class="normal-buttons">Buy now</button>
+                    <button class="normal-buttons">Add to Cart</button>
+                </div>
+            </form>
+            <p class="">Category: Manga, Action, Adventure, Comedy, Fantasy, Sci-Fi</p>
+        </div>
+    </section>
+    <div class="trending-container">
+        <h1>Related books</h1>
+        <div class="trending-carousel-view">
+            <button id="trending-prev-btn" class="trending-btn">
+                <img src="/assets/img/arrow-drop-left-line.svg" alt="left arrow">
+            </button>
+            <ul id="trending-item-list">
+                <li class="trending-item">
+                    <a href="">
+                        <img src="/book templates/fantasy/img/circe.jpg" alt="circe">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img src="/book templates/fantasy/img/harrypotterchambersofsecret.jpg" alt="chamber of secret">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="/book templates/fantasy/img/jadecity.jpg" alt="jade city">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="/book templates/fantasy/img/matilda.jpg" alt="matilda">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="/book templates/fantasy/img/nameofthewind.png"
+                            alt="name of the wind">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="/book templates/fantasy/img/thehobbit.jpg" alt="the hobbit">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="/book templates/fantasy/img/thenightcircus.jpg"
+                            alt="the night circus">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="/book templates/fantasy/img/wizardofearthsea.jpg"
+                            alt="wizard of earthsea">
+                    </a>
+                </li>
+                <li class="trending-item">
+                    <a href="">
+                        <img class="trending-book-img" src="/book templates/fantasy/img/harrypottersorcererstone.jpg"
+                            alt="harry potter sorcerers stone">
+                    </a>
+                </li>
+            </ul>
+            <button id="trending-next-btn" class="trending-btn">
+                <img src="/assets/img/arrow-drop-right-line.svg" alt="right arrow">
+            </button>
+        </div>
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About BookQuest</h4>
+                    <ul>
+                        <li><a href="#"> About Us </a> </li>
+                        <li><a href="#"> Blog </a> </li>
+                        <li><a href="#"> Mission and Vision </a> </li>
+                        <li><a href="#"> Brand Lists </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Customer Service </h4>
+                    <ul>
+                        <li><a href="#"> FAQS </a> </li>
+                        <li><a href="#"> Help Center </a> </li>
+                        <li><a href="#"> Exchange and Return </a> </li>
+                        <li><a href="#"> How to Buy </a> </li>
+                        <li><a href="#"> Payment Methods </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4> Terms and Conditions </h4>
+                    <ul>
+                        <li><a href="#"> Terms of Use </a> </li>
+                        <li><a href="#"> Privacy Policy </a> </li>
+                        <li><a href="#"> Cookies and Cache </a> </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="/assets/js/navigationBar.js"></script>
+    <script type="text/javascript" src="/assets/js/trendingCarousel.js"></script>
+</body>
+
+</html>
