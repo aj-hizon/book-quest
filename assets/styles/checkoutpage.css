@@ -1,0 +1,88 @@
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+#payment-container {
+    max-width: 40vw;
+    margin: 15rem auto 10rem auto;
+}
+
+.payment-second-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.payment-content {
+    background-color: #FEF6C180;
+    padding: 2rem; 
+    border-radius: 20px;
+}
+
+#select-payment-method {
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    max-width: 30%;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fcd53f;
+    padding: 0.4rem 0.9rem;
+    border-radius:9999px;
+    font-weight: 800;
+}
+
+h2 {
+    33
+}
+
+select {
+    font-size: 15px;
+}
+
+option {
+    font-size: 15px;
+}
+
+.payment-method-input {
+    display: flex;
+    flex-direction: column;
+}
+
+#billing-warning {
+    font-size: 14px;
+    margin-bottom: 2rem;
+}
+
+#region-pref {
+    color: black;
+    text-decoration: underline;
+}
+
+.footer {
+}
+
+#payment-logos-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.payment-logos {
+    width: 5rem;
+}
+
+#payment-options {
+    background-color: #FEF6C180;
+    padding: 2rem; 
+    border-radius: 20px;
+    max-width: 30vw;
+    margin: auto;
+}
+
+

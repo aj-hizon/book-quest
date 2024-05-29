@@ -358,7 +358,7 @@ h1 {
     width: 100vw;
     display: flex;
     scroll-behavior: smooth;
-    overflow: auto;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
 }
 
