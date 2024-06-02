@@ -13,12 +13,10 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="assets/styles/mainPageStyle.css">
     <link rel="stylesheet" href="assets/styles/footerStyle.css">
-    <script defer src="TodoItem.js"></script>
     <title>BOOKQUEST Online bookshop</title>
 </head>
 
 <body>
-
     <header>
         <nav class="nav-bar">
             <div class="upper-nav-bar">
@@ -85,10 +83,16 @@
                             </ul>
                         </ul>
                     </li>
-                    <li class="category">New!!</li>
-                    <li class="category">Trending</li>
+                    <a href="#new-books-pointer">
+                        <li class="category">New!!</li>
+                    </a>
+                    <a href="#trending-books-pointer">
+                        <li class="category">Trending</li>
+                    </a>
                     <li class="category">Sale!!</li>
-                    <li class="category">Store Locator</li>
+                    <a href="https://maps.app.goo.gl/RbGpJJNYennAxoKG6">
+                        <li class="category">Store Locator</li>
+                    </a>
                 </ul>
             </div>
         </nav>
@@ -117,7 +121,7 @@
                 <button class="carousel__button carousel__button--right ">
                     <img src="assets\img\arrow-right-wide-line.svg" alt="">
                 </button>
-                <div class="carousel-nav">
+                <div id="trending-books-pointer" class="carousel-nav">
                     <button class="carousel-indicator current-slide"></button>
                     <button class="carousel-indicator"></button>
                     <button class="carousel-indicator"></button>
@@ -126,7 +130,7 @@
         </div>
     </div>
     <div class="trending-container">
-        <h1>Trending</h1>
+        <h1 id="trending-books-container">Trending</h1>
         <div class="trending-carousel-view">
             <button id="trending-prev-btn" class="trending-btn">
                 <img src="assets\img\arrow-left-wide-line.svg" alt="left arrow">
@@ -249,7 +253,7 @@
         </div>
     </div>
     <section class="discounts-section">
-        <ul class="discount-container">
+        <ul id="new-books-pointer" class="discount-container">
             <li>
                 <img src="assets\img\studentDiscount.png" alt="student discount">
             </li>
@@ -262,7 +266,7 @@
         </ul>
     </section>
     <div class="trending-container">
-        <h1>Best sellers!!</h1>
+        <h1 id="new-books-container">NEW!!</h1>
         <div class="trending-carousel-view">
             <button id="bestSellers-prev-btn" class="trending-btn">
                 <img src="assets\img\arrow-left-wide-line.svg" alt="left arrow">
@@ -392,36 +396,34 @@
                 <div class="footer-col">
                     <h4>About BookQuest</h4>
                     <ul>
-                        <li><a href="#"> About Us </a> </li>
-                        <li><a href="#"> Blog </a> </li>
-                        <li><a href="#"> Mission and Vision </a> </li>
-                        <li><a href="#"> Brand Lists </a> </li>
+                        <li> <a href="/footer assets/About Us/AboutUs.html"> About Us </a> </li>
+                        <li><a href="/footer assets/About Us/missionAndVision.html"> Mission and Vision </a> </li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4> Customer Service </h4>
                     <ul>
-                        <li><a href="#"> FAQS </a> </li>
-                        <li><a href="#"> Help Center </a> </li>
-                        <li><a href="#"> Exchange and Return </a> </li>
-                        <li><a href="#"> How to Buy </a> </li>
-                        <li><a href="#"> Payment Methods </a> </li>
+                        <li><a href="/footer assets/Customer Service/FAQS.html"> FAQS </a> </li>
+                        <li><a href="/footer assets/Customer Service/HelpCenter.html"> Help Center </a> </li>
+                        <li><a href="/footer assets/Customer Service/ExchangeAndReturn.html"> Exchange and Return </a> </li>
+                        <li><a href="/footer assets/Customer Service/HowToBuy.html"> How to Buy </a> </li>
+                        <li><a href="/footer assets/Customer Service/PaymentMethods.html"> Payment Methods </a> </li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4> Terms and Conditions </h4>
                     <ul>
-                        <li><a href="#"> Terms of Use </a> </li>
-                        <li><a href="#"> Privacy Policy </a> </li>
-                        <li><a href="#"> Cookies and Cache </a> </li>
+                        <li><a href="/footer assets/Terms and Conditions/TermsOfUse.html"> Terms of Use </a> </li>
+                        <li><a href="/footer assets/Terms and Conditions/PrivacyPolicy.html"> Privacy Policy </a> </li>
+                        <li><a href="/footer assets/Terms and Conditions/CookiesCache.html"> Cookies and Cache </a> </li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Follow Us</h4>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61560395752730"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/book_quest01"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/book_quest01/"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -431,6 +433,7 @@
     <script type="text/javascript" src="/assets/js/carousel.js"></script>
     <script type="text/javascript" src="/assets/js/trendingCarousel.js"></script>
     <script type="text/javascript" src="/assets/js/bestSellersCarousel.js"></script>
+    <script type="text/javascript" src="/assets/js/footerAnimation.js"></script>
 </body>
 
 </html>
